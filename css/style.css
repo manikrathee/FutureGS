@@ -1,7 +1,4 @@
 /*! normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
-/* =============================================================================
-   HTML5 display definitions
-   ========================================================================== */
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
  */
@@ -444,11 +441,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* The 1140px Grid V2 by Andy Taylor http://cssgrid.net */
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 .onecol,
 .twocol,
 .threecol,
@@ -459,112 +451,14 @@ table {
 .eightcol,
 .ninecol,
 .tencol,
-.elevencol {
-  margin-right: 3.8%;
-  float: left;
-  min-height: 1px;
-}
-.onecol {
-  width: 4.85%;
-}
-.twocol {
-  width: 13.45%;
-}
-.threecol {
-  width: 22.05%;
-}
-.fourcol {
-  width: 30.75%;
-}
-.fivecol {
-  width: 39.45%;
-}
-.sixcol {
-  width: 48%;
-}
-.sevencol {
-  width: 56.75%;
-}
-.eightcol {
-  width: 65.4%;
-}
-.ninecol {
-  width: 74.05%;
-}
-.tencol {
-  width: 82.7%;
-}
-.elevencol {
-  width: 91.35%;
-}
+.elevencol,
 .twelvecol {
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
-  float: left;
 }
 .last {
   margin-right: 0px;
-}
-/*
-@media screen and (min-width: 768px) {
-	.row, body, .container {
-		width: 100%;
-		min-width: 0;
-		margin-left: 0px;
-		margin-right: 0px;
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-	
-	.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol 	{
-		width: auto;
-		float: none;
-		margin-left: 0px;
-		margin-right: 0px;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-}*/
-@media only screen and (max-width: 1023px) {
-  body {
-    font-size: 0.8em;
-    line-height: 1.5em;
-  }
-}
-/* Mobile */
-@media handheld, only screen and (max-width: 768px) {
-  body {
-    font-size: 16px;
-    -webkit-text-size-adjust: none;
-  }
-  .row,
-  body,
-  .container {
-    width: 100%;
-    min-width: 0;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .row .onecol,
-  .row .twocol,
-  .row .threecol,
-  .row .fourcol,
-  .row .fivecol,
-  .row .sixcol,
-  .row .sevencol,
-  .row .eightcol,
-  .row .ninecol,
-  .row .tencol,
-  .row .elevencol,
-  .row .twelvecol {
-    width: auto;
-    float: none;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 /*  Base Text Styles */
 body {
@@ -604,6 +498,12 @@ a:link {
   background-repeat: no-repeat;
   text-align: left;
   direction: ltr;
+}
+/* New Image Replacement Technique - http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+.ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .hidden {
   display: none;
@@ -695,38 +595,115 @@ a:link {
   }
 }
 /* Grid: Master Container, default = 1140px */
-.container {
+.row {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1000px;
   min-width: 755px;
   margin: 0 auto;
   overflow: hidden;
 }
 #page_container header {
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
-  float: left;
   margin-right: 0px;
 }
 #page_container #page-nav {
-  margin-right: 3.8%;
-  float: left;
-  min-height: 1px;
-  width: 22.05%;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 }
 #page_container #main {
-  margin-right: 3.8%;
-  float: left;
-  min-height: 1px;
-  width: 74.05%;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
   margin-right: 0px;
 }
 #page_container footer {
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
-  float: left;
   margin-right: 0px;
 }
 @media screen and (min-width: 768px) {
+  /* The 1140px Grid V2 by Andy Taylor http://cssgrid.net */
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: none;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /*  Moved row to grid-mobile to load for mobile first */
+  /*
+  .row (@maxwidth){
+  		width: 100%;
+  		max-width: @maxwidth;
+  		min-width: 755px;
+  		margin: 0 auto;
+  		overflow: hidden;
+  	}*/
+  .onecol,
+  .twocol,
+  .threecol,
+  .fourcol,
+  .fivecol,
+  .sixcol,
+  .sevencol,
+  .eightcol,
+  .ninecol,
+  .tencol,
+  .elevencol {
+    margin-right: 3.8%;
+    float: left !important;
+    min-height: 1px;
+  }
+  .onecol {
+    width: 4.85% !important;
+  }
+  .twocol {
+    width: 13.45% !important;
+  }
+  .threecol {
+    width: 22.05% !important;
+  }
+  .fourcol {
+    width: 30.75% !important;
+  }
+  .fivecol {
+    width: 39.45% !important;
+  }
+  .sixcol {
+    width: 48% !important;
+  }
+  .sevencol {
+    width: 56.75% !important;
+  }
+  .eightcol {
+    width: 65.4% !important;
+  }
+  .ninecol {
+    width: 74.05% !important;
+  }
+  .tencol {
+    width: 82.7% !important;
+  }
+  .elevencol {
+    width: 91.35% !important;
+  }
+  .twelvecol {
+    width: 100% !important;
+  }
+  /*  moved to grid mobile */
+  /* 
   
+  .last {
+  	margin-right: 0px;
+  }
+  
+  
+   */
 }
 @media (min-width: 960px) {
   

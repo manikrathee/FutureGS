@@ -1,12 +1,11 @@
 @import "import/normalize";
-@import "import/grid";
+@import "import/grid-mobile";
 @import "import/core";
 
 /* Grid: Master Container, default = 1140px */
-.container{
-	.row(1140px);
+.row{
+	.row(1000px);
 }
-
 
 #page_container{
 	header{
@@ -28,7 +27,9 @@
 
 
 @media screen and (min-width: 768px) {	
+	@import "import/grid";
 	
+
 }
 
 @media (min-width: 960px) {
