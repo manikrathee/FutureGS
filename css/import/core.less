@@ -12,6 +12,10 @@ a:link { -webkit-tap-highlight-color: #333; }
 
 /*  Mixins */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+/* New Image Replacement Technique - http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+.ir{text-indent: 100%;white-space: nowrap;overflow: hidden;}
+
 .hidden { display: none; visibility: hidden; }
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 .visuallyhidden.focusable:active,
