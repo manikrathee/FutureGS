@@ -16,58 +16,111 @@ body {
 	overflow: hidden;
 }
 
-.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
+.one(@width) {
 	margin-left:0;
 	margin-right:0;
-	width:100%;
+	width:@width;
+} .one(@width) when (@width > 768px) {
+	@max-width:4.85%;
+	width:@max-width;
 }
 
+.two(@width) {
+	margin-left:0;
+	margin-right:0;
+	width:@width;
+} .two(@width) when (@width > 768px) {
+	@max-width:13.45%;
+	width:@max-width;
+}
+
+.three(@width) {
+	margin-left:0;
+	margin-right:0;
+	width:@width;
+} .three(@width) when (@width > 768px) {
+	@max-width:22.05%;
+	width:@max-width;
+}
+
+.four(@width) {
+	margin-left:0;
+	margin-right:0;
+	width:@width;
+} .four(@width) when (@width > 768px) {
+	@max-width:30.75%;
+	width:@max-width;
+}
+
+.five(@width) {
+	margin-left:0;
+	margin-right:0;
+	width:@width;
+} .five(@width) when (@width > 768px) {
+	@max-width:30.75%;
+	width:@max-width;
+}
+
+.six(@width) {
+	margin-left:0;
+	margin-right:0;
+	width:@width;
+} .six(@width) when (@width > 768px) {
+	@max-width:48%;
+	width:@max-width;
+}
+
+.seven(@width) {
+	margin-left:0;
+	margin-right:0;
+	width:@width;
+} .seven(@width) when (@width > 768px) {
+	@max-width:56.75%;
+	width:@max-width;
+}
+
+.eight(@width) {
+	margin-left:0;
+	margin-right:0;
+	width:@width;
+} .eight(@width) when (@width > 768px) {
+	@max-width:65.4%;
+	width:@max-width;
+}
+
+.nine(@width) {
+	margin-left:0;
+	margin-right:0;
+	width:@width;
+} .nine(@width) when (@width > 768px) {
+	@max-width:74.05%;
+	width:@max-width;
+}
+
+.ten(@width) {
+	margin-left:0;
+	margin-right:0;
+	width:@width;
+} .ten(@width) when (@width > 768px) {
+	@max-width:82.7%;
+	width:@max-width;
+}
+
+.eleven(@width) {
+	margin-left:0;
+	margin-right:0;
+	width:@width;
+} .eleven(@width) when (@width > 768px) {
+	@max-width:91.35%;
+	width:@max-width;
+}
+
+.twelve(@width) {
+	margin-left:0;
+	margin-right:0;
+	width:@width;
+}
 
 .last {
 	margin-right: 0px;
-}
-
-
-@media screen and (min-width: 768px){
-	.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven {
-		margin-right: 3.8%;
-		float: left;
-		min-height: 1px;
-	}
-	.one {
-		width: 4.85%;
-	}
-	.two {
-		width: 13.45%;
-	}
-	.three {
-		width: 22.05%;
-	}
-	.four {
-		width: 30.75%;
-	}
-	.five {
-		width: 39.45%;
-	}
-	.six {
-		width: 48%;
-	}
-	.seven {
-		width: 56.75%;
-	}
-	.eight {
-		width: 65.4%;
-	}
-	.nine {
-		width: 74.05%;
-	}
-	.ten {
-		width: 82.7%;
-	}
-	.eleven {
-		width: 91.35%;
-	}
-	.twelve {
-		width: 100%;
-	}
 }
