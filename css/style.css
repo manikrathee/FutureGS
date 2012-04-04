@@ -13,77 +13,8 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-.one,
-.two,
-.three,
-.four,
-.five,
-.six,
-.seven,
-.eight,
-.nine,
-.ten,
-.eleven,
-.twelve {
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-}
 .last {
   margin-right: 0px;
-}
-@media screen and (min-width: 768px) {
-  .one,
-  .two,
-  .three,
-  .four,
-  .five,
-  .six,
-  .seven,
-  .eight,
-  .nine,
-  .ten,
-  .eleven {
-    margin-right: 3.8%;
-    float: left;
-    min-height: 1px;
-  }
-  .one {
-    width: 4.85%;
-  }
-  .two {
-    width: 13.45%;
-  }
-  .three {
-    width: 22.05%;
-  }
-  .four {
-    width: 30.75%;
-  }
-  .five {
-    width: 39.45%;
-  }
-  .six {
-    width: 48%;
-  }
-  .seven {
-    width: 56.75%;
-  }
-  .eight {
-    width: 65.4%;
-  }
-  .nine {
-    width: 74.05%;
-  }
-  .ten {
-    width: 82.7%;
-  }
-  .eleven {
-    width: 91.35%;
-  }
-  .twelve {
-    width: 100%;
-  }
 }
 /*@import "import/core";*/
 /* Grid: Master Container, default = 1140px */
@@ -117,9 +48,55 @@ body {
   width: 100%;
   margin-right: 0px;
 }
-@media screen and (min-width: 768px) {
-  
+@media (min-width: 768px) {
+  #page_container header {
+    margin-left: 0;
+    margin-right: 0;
+    width: 768px;
+    margin-right: 0px;
+  }
+  #page_container #page-nav {
+    margin-left: 0;
+    margin-right: 0;
+    width: 768px;
+  }
+  #page_container #main {
+    margin-left: 0;
+    margin-right: 0;
+    width: 768px;
+    margin-right: 0px;
+  }
+  #page_container footer {
+    margin-left: 0;
+    margin-right: 0;
+    width: 768px;
+    margin-right: 0px;
+  }
 }
 @media (min-width: 960px) {
-  
+  #page_container header {
+    margin-left: 0;
+    margin-right: 0;
+    width: 960px;
+    margin-right: 0px;
+  }
+  #page_container #page-nav {
+    margin-left: 0;
+    margin-right: 0;
+    width: 960px;
+    width: 22.05%;
+  }
+  #page_container #main {
+    margin-left: 0;
+    margin-right: 0;
+    width: 960px;
+    width: 74.05%;
+    margin-right: 0px;
+  }
+  #page_container footer {
+    margin-left: 0;
+    margin-right: 0;
+    width: 960px;
+    margin-right: 0px;
+  }
 }
