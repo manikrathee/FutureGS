@@ -5,10 +5,6 @@
 *   @manikrathee on twitter
  */
 /*@import "import/normalize";*/
-body {
-  font-size: 16px;
-  -webkit-text-size-adjust: none;
-}
 .container {
   padding-left: 20px;
   padding-right: 20px;
