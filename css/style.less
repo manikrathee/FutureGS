@@ -9,34 +9,15 @@
 	.row(1140px);
 }
 
+@width: 100%;
+@import "layout";
 
-#page_container{
-	header{
-		.twelve;
-		.last;
-	}
-	#page-nav{
-		.three;
-	}
-	#main{
-		.nine;
-		.last;
-	}
-	footer{
-		.twelve;
-		.last;
-	}
+@media (min-width:768px) {
+	@width: 768px;
+	@import "layout";
+}
+@media (min-width:960px) {
+	@width: 960px;
+	@import "layout";
 }
 
-
-@media screen and (min-width: 768px) {	
-
-}
-
-@media (min-width: 960px) {
-	
-}
-
-.oldie{
-
-}
