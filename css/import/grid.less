@@ -1,4 +1,3 @@
- /* The 1140px Grid V2 by Andy Taylor http://cssgrid.net */
 body {
 	font-size: 16px;
 	-webkit-text-size-adjust: none;
@@ -9,66 +8,66 @@ body {
 	padding-right: 20px;
 }
 
-/*  Moved row to grid-mobile to load for mobile first */
-/*
 .row (@maxwidth){
-		width: 100%;
-		max-width: @maxwidth;
-		min-width: 755px;
-		margin: 0 auto;
-		overflow: hidden;
-	}*/
-
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
-	margin-right: 3.8%;
-	float: left;
-	min-height: 1px;
-}
-.onecol {
-	width: 4.85%;
-}
-.twocol {
-	width: 13.45%;
-}
-.threecol {
-	width: 22.05%;
-}
-.fourcol {
-	width: 30.75%;
-}
-.fivecol {
-	width: 39.45%;
-}
-.sixcol {
-	width: 48%;
-}
-.sevencol {
-	width: 56.75%;
-}
-.eightcol {
-	width: 65.4%;
-}
-.ninecol {
-	width: 74.05%;
-}
-.tencol {
-	width: 82.7%;
-}
-.elevencol {
-	width: 91.35%;
-}
-.twelvecol {
 	width: 100%;
+	max-width: @maxwidth;
+	min-width: 755px;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+}
 
-
-/*  moved to grid mobile */
-/* 
 
 .last {
 	margin-right: 0px;
 }
 
 
- */
+@media screen and (min-width: 768px){
+	.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven {
+		margin-right: 3.8%;
+		float: left;
+		min-height: 1px;
+	}
+	.one {
+		width: 4.85%;
+	}
+	.two {
+		width: 13.45%;
+	}
+	.three {
+		width: 22.05%;
+	}
+	.four {
+		width: 30.75%;
+	}
+	.five {
+		width: 39.45%;
+	}
+	.six {
+		width: 48%;
+	}
+	.seven {
+		width: 56.75%;
+	}
+	.eight {
+		width: 65.4%;
+	}
+	.nine {
+		width: 74.05%;
+	}
+	.ten {
+		width: 82.7%;
+	}
+	.eleven {
+		width: 91.35%;
+	}
+	.twelve {
+		width: 100%;
+	}
+}
