@@ -11,7 +11,6 @@ body {
 .row (@maxwidth){
 	width: 100%;
 	max-width: @maxwidth;
-	min-width: 755px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -23,6 +22,7 @@ body {
 } .one(@width) when (@width > 768px) {
 	@max-width:4.85%;
 	width:@max-width;
+	float:left;
 }
 
 .two(@width) {
@@ -32,6 +32,7 @@ body {
 } .two(@width) when (@width > 768px) {
 	@max-width:13.45%;
 	width:@max-width;
+	float:left;
 }
 
 .three(@width) {
@@ -41,6 +42,7 @@ body {
 } .three(@width) when (@width > 768px) {
 	@max-width:22.05%;
 	width:@max-width;
+	float:left;
 }
 
 .four(@width) {
@@ -50,6 +52,7 @@ body {
 } .four(@width) when (@width > 768px) {
 	@max-width:30.75%;
 	width:@max-width;
+	float:left;
 }
 
 .five(@width) {
@@ -59,6 +62,7 @@ body {
 } .five(@width) when (@width > 768px) {
 	@max-width:30.75%;
 	width:@max-width;
+	float:left;
 }
 
 .six(@width) {
@@ -68,6 +72,7 @@ body {
 } .six(@width) when (@width > 768px) {
 	@max-width:48%;
 	width:@max-width;
+	float:left;
 }
 
 .seven(@width) {
@@ -77,6 +82,7 @@ body {
 } .seven(@width) when (@width > 768px) {
 	@max-width:56.75%;
 	width:@max-width;
+	float:left;
 }
 
 .eight(@width) {
@@ -86,6 +92,7 @@ body {
 } .eight(@width) when (@width > 768px) {
 	@max-width:65.4%;
 	width:@max-width;
+	float:left;
 }
 
 .nine(@width) {
@@ -95,6 +102,7 @@ body {
 } .nine(@width) when (@width > 768px) {
 	@max-width:74.05%;
 	width:@max-width;
+	float:left;
 }
 
 .ten(@width) {
@@ -104,6 +112,7 @@ body {
 } .ten(@width) when (@width > 768px) {
 	@max-width:82.7%;
 	width:@max-width;
+	float:left;
 }
 
 .eleven(@width) {
@@ -113,14 +122,27 @@ body {
 } .eleven(@width) when (@width > 768px) {
 	@max-width:91.35%;
 	width:@max-width;
+	float:left;
 }
 
 .twelve(@width) {
 	margin-left:0;
 	margin-right:0;
 	width:@width;
+	float:left;
 }
 
 .last {
 	margin-right: 0px;
+}
+
+
+@media screen and (min-width: 768px){
+	.row (@maxwidth){
+		width: 100%;
+		max-width: @maxwidth;
+		min-width: 755px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
 }

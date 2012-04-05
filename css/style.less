@@ -1,23 +1,23 @@
 @import "import/human";
-/*@import "import/normalize";*/
+@import "import/normalize";
 @import "import/grid";
-/*@import "import/core";*/
+@import "import/core";
 
 
-/* Grid: Master Container, default = 1140px */
-.row{
-	.row(1140px);
-}
 
-@width: 100%;
-@import "layout";
+.row{.row(1140px);}			/* Max width for the row, above 960px */
+@width: 100%;				/* Mobile width, sent to rows */
+@import "import/layout";	/* Import core layout columns */
+
+
+
 
 @media (min-width:768px) {
-	@width: 768px;
-	@import "layout";
+	@width: 768px;					/* Set var @width to trigger real columns */
+	@import "import/layout";		/* Import core layout columns */
 }
 @media (min-width:960px) {
-	@width: 960px;
-	@import "layout";
+	@width: 960px;					/* Set var @width to trigger real columns */
+	@import "import/layout";		/* Import core layout columns */
 }
 
