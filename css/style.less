@@ -3,21 +3,20 @@
 @import "import/grid";
 /*@import "import/core";*/
 
+@width: 100%;
+@max-width: 1140px;
+@import "layout";
 
 /* Grid: Master Container, default = 1140px */
 .row{
-	.row(1140px);
+	.row(@width, @max-width);
 }
-
-@width: 100%;
-@import "layout";
-
 @media (min-width:768px) {
 	@width: 768px;
 	@import "layout";
 }
-@media (min-width:960px) {
+/*@media (min-width:960px) {
 	@width: 960px;
 	@import "layout";
-}
+}*/
 
