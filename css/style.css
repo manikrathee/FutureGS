@@ -13,90 +13,97 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
+/*.row (@maxwidth){
+	width: 100%;
+	max-width: @maxwidth;
+	min-width: 755px;
+	margin: 0 auto;
+	overflow: hidden;
+}*/
 .last {
   margin-right: 0px;
 }
 /*@import "import/core";*/
-/* Grid: Master Container, default = 1140px */
-.row {
-  width: 100%;
-  max-width: 1140px;
-  min-width: 755px;
-  margin: 0 auto;
-  overflow: hidden;
-}
 #page_container header {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
+  float: left;
   margin-right: 0px;
 }
 #page_container #page-nav {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
+  float: left;
 }
 #page_container #main {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
+  float: left;
+}
+#page_container .aside {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  float: left;
   margin-right: 0px;
 }
 #page_container footer {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
+  float: left;
   margin-right: 0px;
+}
+/* Grid: Master Container, default = 1140px */
+.row {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   #page_container header {
     margin-left: 0;
     margin-right: 0;
     width: 768px;
+    float: left;
     margin-right: 0px;
   }
   #page_container #page-nav {
     margin-left: 0;
     margin-right: 0;
     width: 768px;
-  }
-  #page_container #main {
-    margin-left: 0;
-    margin-right: 0;
-    width: 768px;
-    margin-right: 0px;
-  }
-  #page_container footer {
-    margin-left: 0;
-    margin-right: 0;
-    width: 768px;
-    margin-right: 0px;
-  }
-}
-@media (min-width: 960px) {
-  #page_container header {
-    margin-left: 0;
-    margin-right: 0;
-    width: 960px;
-    margin-right: 0px;
-  }
-  #page_container #page-nav {
-    margin-left: 0;
-    margin-right: 0;
-    width: 960px;
+    float: left;
     width: 22.05%;
   }
   #page_container #main {
     margin-left: 0;
     margin-right: 0;
-    width: 960px;
-    width: 74.05%;
+    width: 768px;
+    float: left;
+    width: 30.75%;
+  }
+  #page_container .aside {
+    margin-left: 0;
+    margin-right: 0;
+    width: 768px;
+    float: left;
+    width: 30.75%;
     margin-right: 0px;
   }
   #page_container footer {
     margin-left: 0;
     margin-right: 0;
-    width: 960px;
+    width: 768px;
+    float: left;
     margin-right: 0px;
   }
 }
+/*@media (min-width:960px) {
+	@width: 960px;
+	@import "layout";
+}*/
