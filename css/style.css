@@ -18,7 +18,6 @@ body {
 }
 /*@import "import/core";*/
 #page_container .row header {
-  background: green;
   margin-left: 0;
   margin-right: 0;
   float: left;
@@ -53,7 +52,6 @@ body {
 }
 @media (min-width: 768px) {
   #page_container .row header {
-    background: green;
     margin-left: 0;
     margin-right: 0;
     float: left;
