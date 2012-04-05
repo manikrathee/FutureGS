@@ -1,20 +1,33 @@
 #page_container{
-	header{
-		.twelve(@width);
-		.last;
+	.row {
+		header{
+			background:green;
+			.twelve(@breakpoint);
+			.last;
+		}
 	}
-	#page-nav{
-		.three (@width);
+
+	.row {
+		#page-nav{
+			.three (@breakpoint);
+		}
 	}
-	#main{
-		.four (@width);
+
+	.row {
+		#main{
+			border: 1px solid black;
+			.four (@breakpoint);
+		}
+		.aside {
+			border: 1px solid black;
+			.four (@breakpoint);
+		}
 	}
-	.aside {
-		.four (@width);
-		.last
-	}
-	footer{
-		.twelve (@width);
-		.last;
+	
+	.row {
+		footer{
+			.twelve (@breakpoint);
+			.last;
+		}
 	}
 }

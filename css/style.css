@@ -13,97 +13,80 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-/*.row (@maxwidth){
-	width: 100%;
-	max-width: @maxwidth;
-	min-width: 755px;
-	margin: 0 auto;
-	overflow: hidden;
-}*/
 .last {
   margin-right: 0px;
 }
 /*@import "import/core";*/
-#page_container header {
+#page_container .row header {
+  background: green;
   margin-left: 0;
   margin-right: 0;
-  width: 100%;
   float: left;
   margin-right: 0px;
 }
-#page_container #page-nav {
+#page_container .row #page-nav {
   margin-left: 0;
   margin-right: 0;
-  width: 100%;
-  float: left;
 }
-#page_container #main {
+#page_container .row #main {
+  border: 1px solid black;
   margin-left: 0;
   margin-right: 0;
-  width: 100%;
-  float: left;
 }
-#page_container .aside {
+#page_container .row .aside {
+  border: 1px solid black;
   margin-left: 0;
   margin-right: 0;
-  width: 100%;
-  float: left;
-  margin-right: 0px;
 }
-#page_container footer {
+#page_container .row footer {
   margin-left: 0;
   margin-right: 0;
-  width: 100%;
   float: left;
   margin-right: 0px;
 }
 /* Grid: Master Container, default = 1140px */
 .row {
   width: 100%;
-  max-width: 1140px;
-  min-width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  max-width: 1140px;
 }
 @media (min-width: 768px) {
-  #page_container header {
+  #page_container .row header {
+    background: green;
     margin-left: 0;
     margin-right: 0;
-    width: 768px;
     float: left;
     margin-right: 0px;
   }
-  #page_container #page-nav {
+  #page_container .row #page-nav {
     margin-left: 0;
     margin-right: 0;
-    width: 768px;
     float: left;
     width: 22.05%;
   }
-  #page_container #main {
+  #page_container .row #main {
+    border: 1px solid black;
     margin-left: 0;
     margin-right: 0;
-    width: 768px;
     float: left;
     width: 30.75%;
   }
-  #page_container .aside {
+  #page_container .row .aside {
+    border: 1px solid black;
     margin-left: 0;
     margin-right: 0;
-    width: 768px;
     float: left;
     width: 30.75%;
-    margin-right: 0px;
   }
-  #page_container footer {
+  #page_container .row footer {
     margin-left: 0;
     margin-right: 0;
-    width: 768px;
     float: left;
     margin-right: 0px;
   }
 }
 /*@media (min-width:960px) {
-	@width: 960px;
+	@breakpoint: 960px;
 	@import "layout";
 }*/

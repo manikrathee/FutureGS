@@ -8,135 +8,116 @@ body {
 	padding-right: 20px;
 }
 
-.row (@min-width, @max-width){
+.row (@max-width){
 	width: 100%;
-	max-width: @max-width;
-	min-width: @min-width;
 	margin: 0 auto;
 	overflow: hidden;
+} .row(@breakpoint) when (@breakpoint > 767px) {
+	max-width:@breakpoint;
 }
-/*.row (@maxwidth){
-	width: 100%;
-	max-width: @maxwidth;
-	min-width: 755px;
-	margin: 0 auto;
-	overflow: hidden;
-}*/
 
-.one(@width) {
+.one(@breakpoint) {
 	margin-left:0;
 	margin-right:0;
-	width:@width;
+} .one(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-} .one(@width) when (@width > 767px) {
 	@max-width:4.85%;
 	width:@max-width;
 }
 
-.two(@width) {
+.two(@breakpoint) {
 	margin-left:0;
 	margin-right:0;
-	width:@width;
+} .two(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-} .two(@width) when (@width > 767px) {
 	@max-width:13.45%;
 	width:@max-width;
 }
 
-.three(@width) {
+.three(@breakpoint) {
 	margin-left:0;
 	margin-right:0;
-	width:@width;
+} .three(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-} .three(@width) when (@width > 767px) {
 	@max-width:22.05%;
 	width:@max-width;
 }
 
-.four(@width) {
+.four(@breakpoint) {
 	margin-left:0;
 	margin-right:0;
-	width:@width;
+} .four(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-} .four(@width) when (@width > 767px) {
+	@max-width:30.75%;
+	width:@max-width;
+} 
+
+.five(@breakpoint) {
+	margin-left:0;
+	margin-right:0;
+} .five(@breakpoint) when (@breakpoint > 768px) {
+	float: left;
 	@max-width:30.75%;
 	width:@max-width;
 }
 
-.five(@width) {
+.six(@breakpoint) {
 	margin-left:0;
 	margin-right:0;
-	width:@width;
+} .six(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-} .five(@width) when (@width > 768px) {
-	@max-width:30.75%;
-	width:@max-width;
-}
-
-.six(@width) {
-	margin-left:0;
-	margin-right:0;
-	width:@width;
-	float: left;
-} .six(@width) when (@width > 767px) {
 	@max-width:48%;
 	width:@max-width;
 }
 
-.seven(@width) {
+.seven(@breakpoint) {
 	margin-left:0;
 	margin-right:0;
-	width:@width;
+} .seven(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-} .seven(@width) when (@width > 767px) {
 	@max-width:56.75%;
 	width:@max-width;
 }
 
-.eight(@width) {
+.eight(@breakpoint) {
 	margin-left:0;
 	margin-right:0;
-	width:@width;
+} .eight(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-} .eight(@width) when (@width > 767px) {
 	@max-width:65.4%;
 	width:@max-width;
 }
 
-.nine(@width) {
+.nine(@breakpoint) {
 	margin-left:0;
 	margin-right:0;
-	width:@width;
+} .nine(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-} .nine(@width) when (@width > 767px) {
 	@max-width:74.05%;
 	width:@max-width;
 }
 
-.ten(@width) {
+.ten(@breakpoint) {
 	margin-left:0;
 	margin-right:0;
-	width:@width;
 	float: left;
-} .ten(@width) when (@width > 767px) {
+} .ten(@breakpoint) when (@breakpoint > 767px) {
 	@max-width:82.7%;
 	width:@max-width;
 }
 
-.eleven(@width) {
+.eleven(@breakpoint) {
 	margin-left:0;
 	margin-right:0;
-	width:@width;
 	float: left;
-} .eleven(@width) when (@width > 767px) {
+} .eleven(@breakpoint) when (@breakpoint > 767px) {
 	@max-width:91.35%;
 	width:@max-width;
 }
 
-.twelve(@width) {
+.twelve(@breakpoint) {
 	margin-left:0;
 	margin-right:0;
-	width:@width;
 	float: left;
 }
 
