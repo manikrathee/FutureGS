@@ -13,6 +13,24 @@ a:link { -webkit-tap-highlight-color: #333; }
 /*  Mixins */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 
+/* UL, OL overrides */
+ul,ol{
+  padding:0;
+  margin:0;
+  li{
+    padding:0;
+    margin:0;
+  }
+}
+
+/* Background & Link transitions */
+a{
+  -webkit-transition:background-color .3s linear, color .3s linear;
+  -moz-transition:background-color .3s linear, color .3s linear;
+  -o-transition:background-color .3s linear, color .3s linear;
+  transition:background-color .3s linear, color .3s linear;
+}
+
 /* New Image Replacement Technique - http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
 /*.ir{text-indent: 100%;white-space: nowrap;overflow: hidden;}*/
 
