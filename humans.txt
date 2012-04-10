@@ -3,44 +3,19 @@
 
 
 /* TEAM */
-  Manik Rathee
-  Site: www.manikrathee.com
-  Twitter: @manikrathee
-  Location: East Coast, USA
-
-  Wolff [Chris Wolff]
-  Site: www.chriswolffdevelopment.com
-  Twitter:@seawolff
-  Location: Chicago, IL
+ Name:
+ Team Site:
+ Twitter:
+ Location:
 
 
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
-  
-  
 
-                                    
-                               -o/-                       
-                               +oo//-                     
-                              :ooo+//:                    
-                             -ooooo///-                   
-                             /oooooo//:                   
-                            :ooooooo+//-                  
-                           -+oooooooo///-                 
-           -://////////////+oooooooooo++////////////::    
-            :+ooooooooooooooooooooooooooooooooooooo+:::-  
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-   
-                     -:+ooooooooooooooooo+:://////:--     
-                       /ooooooooooooooooo+//////:-        
-                      -ooooooooooooooooooo////-           
-                      /ooooooooo+oooooooooo//:            
-                     :ooooooo+/::/+oooooooo+//-           
-                    -oooooo/::///////+oooooo///-          
-                    /ooo+::://////:---:/+oooo//:          
-                   -o+/::///////:-      -:/+o+//-         
-                   :-:///////:-            -:/://         
-                     -////:-                 --//:        
-                       --                       -:        
+
+/* FRAMEWORK */  
+ TITLE Framework
+ Github URL
+ Built by Manik Rathee / www.manikrathee.com
+        & Chris Wolff / www.chriswolffdevelopment.com   

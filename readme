@@ -1,11 +1,11 @@
-HTML, CSS Framework
-Built by Manik Rathee
-<<<<<<< HEAD
-Custom configuration of 1140gs, Semantic gs, twitter bootstrap, h5bp and more
+//Title
+Responsive, Fluid, Fully Semantic Framework
+
+Responsive and fluid css grid for futureproof layouts with completely semantic markup.
+
+Inspired by Twitter Bootstrap, 1140gs, Semantic.gs, H5BP & Daniel Ryan's CSS Smart Grid.
 
 
-
-=======
-With Help From Chris Wolff
-Custom configuration of 1140gs, Semantic gs, twitter bootstrap, h5bp and more
->>>>>>> 8b06b2e62b9aaa20b1c17f3a6c1b0844b3163ce9
+Built by:
+Manik Rathee / www.manikrathee.com / @manikrathee
+Chris Wolff / www.chriswolffdevelopment.com / @seawolff
