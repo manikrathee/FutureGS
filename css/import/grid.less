@@ -12,113 +12,106 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-} .row(@breakpoint) when (@breakpoint > 767px) {
-	max-width:@breakpoint;
+	> * {
+		margin-left:0;
+		margin-right:0;
+		width:100%;
+	}
+} .row(@max-width) when (@max-width > 767px) {
+	max-width:@max-width;
 }
 
 .one(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
 } .one(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-	@max-width:4.85%;
+	/* margin-left: 3.84%; */
+	@max-width:6.6666666666667%;
 	width:@max-width;
 }
 
 .two(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
 } .two(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-	@max-width:13.45%;
+	/* margin-left: 3.84%; */
+	@max-width:15%;
 	width:@max-width;
 }
 
 .three(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
 } .three(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-	@max-width:22.05%;
+	/* margin-left: 3.84%; */
+	@max-width:23.333333333333%;
 	width:@max-width;
 }
 
 .four(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
 } .four(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-	@max-width:30.75%;
+	/* margin-left: 3.84%; */
+	@max-width:31.666666666667%;
 	width:@max-width;
 } 
 
 .five(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
 } .five(@breakpoint) when (@breakpoint > 768px) {
 	float: left;
-	@max-width:30.75%;
+	/* margin-left: 3.84%; */
+	@max-width:40%;
 	width:@max-width;
 }
 
 .six(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
 } .six(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-	@max-width:48%;
+	/* margin-left: 3.84%; */
+	@max-width:48.333333333333%;
 	width:@max-width;
 }
 
 .seven(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
 } .seven(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-	@max-width:56.75%;
+	/* margin-left: 3.84%; */
+	@max-width:56.666666666667%;
 	width:@max-width;
 }
 
 .eight(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
 } .eight(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-	@max-width:65.4%;
+	/* margin-left: 3.84%; */
+	@max-width:65%;
 	width:@max-width;
 }
 
 .nine(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
 } .nine(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
-	@max-width:74.05%;
+	/* margin-left: 3.84%; */
+	@max-width:73.333333333333%;
 	width:@max-width;
 }
 
 .ten(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
-	float: left;
 } .ten(@breakpoint) when (@breakpoint > 767px) {
-	@max-width:82.7%;
+	float: left;
+	/* margin-left: 3.84%; */
+	@max-width:81.666666666667%;
 	width:@max-width;
 }
 
 .eleven(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
-	float: left;
 } .eleven(@breakpoint) when (@breakpoint > 767px) {
-	@max-width:91.35%;
+	float: left;
+	/* margin-left: 3.84%; */
+	@max-width:90%;
 	width:@max-width;
 }
 
 .twelve(@breakpoint) {
-	margin-left:0;
-	margin-right:0;
-	float: left;
+	@max-width:98.333333333333%;
+	width:@max-width;
 }
 
 .last {
