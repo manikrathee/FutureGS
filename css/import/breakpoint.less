@@ -1,11 +1,8 @@
-@import "import/human";
-/*@import "import/normalize";*/
 @import "import/grid";
-/*@import "import/core";*/
 
 @breakpoint: 100%;
 @max-width: 1140px;
-@import "layout";
+@import "../layout";
 
 /* Grid: Master Container, default = 1140px */
 .row{
@@ -14,6 +11,15 @@
 @media (min-width:768px) {
 	@breakpoint: 768px;
 	@import "layout";
+	.row {
+		> * {
+			margin-left: 1.666666667%;
+		}
+		:first-child,
+	  	.first {
+	  		margin-left:0;
+		}
+	}
 }
 
 .oldie {
