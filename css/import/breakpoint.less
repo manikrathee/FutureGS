@@ -1,16 +1,16 @@
-@import "import/grid";
+@import "grid";
 
+/* Grid: Master Container, default = 1140px */
 @breakpoint: 100%;
 @max-width: 1140px;
 @import "../layout";
 
-/* Grid: Master Container, default = 1140px */
 .row{
 	.row(@max-width);
 }
 @media (min-width:768px) {
 	@breakpoint: 768px;
-	@import "layout";
+	@import "../layout";
 	.row {
 		> * {
 			margin-left: 1.666666667%;
