@@ -1,0 +1,108 @@
+/* 
+*   Built on the fluid Master Framework
+*   Github: https://github.com/manikrathee/Master-Framework
+ */
+#page-container .row div strong {
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #444;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px #000000;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+body {
+  font-size: 16px;
+  -webkit-text-size-adjust: none;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.last {
+  margin-right: 0px;
+}
+/* Grid: Master Container, default = 1140px */
+.row {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1140px;
+}
+.row > * {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .row .uno {
+    float: left;
+    /* margin-left: 3.84%; */
+  
+    width: 6.6666666666667%;
+  }
+  .row .dos {
+    float: left;
+    /* margin-left: 3.84%; */
+  
+    width: 15%;
+  }
+  .row .tres {
+    float: left;
+    /* margin-left: 3.84%; */
+  
+    width: 23.333333333333%;
+  }
+  .row .cuatro {
+    float: left;
+    /* margin-left: 3.84%; */
+  
+    width: 31.666666666667%;
+  }
+  .row .siete {
+    float: left;
+    /* margin-left: 3.84%; */
+  
+    width: 48.333333333333%;
+  }
+  .row .ocho {
+    float: left;
+    /* margin-left: 3.84%; */
+  
+    width: 65%;
+  }
+  .row .fee {
+    float: left;
+    /* margin-left: 3.84%; */
+  
+    width: 15%;
+  }
+  .row .fie {
+    float: left;
+    /* margin-left: 3.84%; */
+  
+    width: 23.333333333333%;
+  }
+  .row .foe {
+    float: left;
+    /* margin-left: 3.84%; */
+  
+    width: 48.333333333333%;
+  }
+  .row .fum {
+    float: left;
+    /* margin-left: 3.84%; */
+  
+    width: 6.6666666666667%;
+  }
+  .row > * {
+    margin-left: 1.666666667%;
+  }
+  .row :first-child,
+  .row .first {
+    margin-left: 0;
+  }
+}
