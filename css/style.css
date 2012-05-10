@@ -614,6 +614,22 @@ a:link {
   text-align: center;
   padding: 10px 0;
 }
+#page-container #main-nav #nav-hook-return {
+  display: block;
+  background: #000;
+  text-align: center;
+  padding: 10px 0;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+#page-container #main-nav #nav-hook-return:hover {
+  background: #333;
+}
 #page-container #nav-hook {
   display: block;
   background: #000;
@@ -641,6 +657,11 @@ a:link {
   text-shadow: 0 -1px 1px #000000;
   border-radius: 5px;
   margin-top: 10px;
+}
+@media screen and (min-width: 500px) {
+  #page-container #nav-hook {
+    display: none;
+  }
 }
 .container {
   padding-left: 20px;
@@ -746,24 +767,35 @@ a:link {
     margin-left: 0;
   }
 }
-[role="navigation"],
-[role="main"] {
-  transition: .2s all ease;
-  width: 90%;
-  padding: 5%;
-}
-.js nav#main-nav[role="navigation"] {
-  margin-left: -100%;
-  float: left;
-}
-.js [role="main"] {
-  margin-left: 0;
-  float: left;
-}
-.active-nav [role="navigation"] {
-  margin-left: 0;
-  width: 80%;
-}
-.active-nav [role="main"] {
-  margin-right: -100%;
+@media screen and (max-width: 499px) {
+  html,
+  body {
+    min-height: 100%;
+  }
+  nav#main-nav,
+  div#main {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+  }
+  .js #main-nav {
+    margin-left: -200%;
+    float: left;
+  }
+  .js #main {
+    margin-left: 0;
+    float: left;
+  }
+  .active-nav#main-nav {
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .active-nav#main {
+    margin-right: -300%;
+    padding-left: 100%;
+  }
 }

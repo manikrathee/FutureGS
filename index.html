@@ -22,15 +22,16 @@
 	<header id="page-header">
 		Page Header
 	</header>
-	<nav id="main-nav" role=["navigation"]>
+	<nav id="main-nav">
 		<ul>
 			<li><a href="/" title="Home">Home</a></li>
 			<li><a href="/" title="About">About</a></li>
 			<li><a href="/" title="Work">Work</a></li>
 			<li><a href="/" title="Contact">Contact</a></li>
 		</ul>
+		<a id="nav-hook-return" href="#" title="Return To Content">Return to Content</a>
 	</nav>
-	<div role=["main"]>
+	<div id="main">
 		<a id="nav-hook" href="#" title="View Navigation">View Navigation</a>
 		<div class="row">
 			<div class="uno"><strong>Uno</strong></div>
@@ -92,5 +93,24 @@
 <script src="js/libs/dd_belatedpng.js"></script>
 <script> DD_belatedPNG.fix('img, .png_bg');</script>
 <![endif]-->
+<script>
+	var navHook = $('#nav-hook');
+	var navHookReturn = $('#nav-hook-return');
+	var navigation = $('#main-nav');
+	var main =	$('#main');
+
+	function showNav(){
+	 	navigation.toggleClass("active-nav");
+	 	main.toggleClass("active-nav");
+	}
+
+	navHook.click(showNav);
+	navHookReturn.click(showNav);
+</script>
+
+
+
+
+
 </body>
 </html>

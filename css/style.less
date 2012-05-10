@@ -30,6 +30,22 @@
 				padding:10px 0;
 			}
 		}
+		#nav-hook-return{
+			display: block;
+			background:#000;
+			text-align:center;
+			padding:10px 0;
+			color:#f4f4f4;
+			text-transform: uppercase;
+			font-weight:bold;
+			margin:10px 0;
+			border-radius: 6px; 
+			-moz-border-radius: 6px;  
+			-webkit-border-radius: 6px;
+			&:hover{
+				background:#333;
+			}
+		}
 	}
 	#nav-hook{
 		display: block;
@@ -65,28 +81,44 @@
 	}
 }
 
+@media screen and (min-width:500px){
+	#page-container #nav-hook{
+		display: none;
+	}
+}
 @import "import/breakpoint";
 
-[role="navigation"],
-[role="main"]{
-	transition: .2s all ease;			
-	width: 90%;
-	padding: 5%;
-}
+@media screen and (max-width:499px){
+	html, body{
+		min-height:100%;
 
-.js nav#main-nav[role="navigation"] {	
-	margin-left: -100%;
-	float: left;
-}
-.js [role="main"] {
-	margin-left: 0;
-	float: left;
-}
+	}
+	nav#main-nav,
+	div#main{
+		-webkit-transition:all 0.5s ease-in-out;
+		-moz-transition:all 0.5s ease-in-out;
+		transition:all 0.5s ease-in-out;		
+		width: 100%;
+		height:100%;
+		min-height:100%;
+	}
 
-.active-nav [role="navigation"] {	
-	margin-left: 0;	
-	width: 80%;
-}
-.active-nav [role="main"]{
-	margin-right: -100%;
+	.js #main-nav {	
+		margin-left: -200%;
+		float: left;
+	}
+	.js #main {
+		margin-left: 0;
+		float: left;
+	}
+
+	.active-nav#main-nav {	
+		margin-left: 0;	
+		width: 100%;
+		height:100%;
+	}
+	.active-nav#main{
+		margin-right: -300%;
+		padding-left:100%;
+	}
 }
