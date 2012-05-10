@@ -3,6 +3,13 @@
 @import "import/core";
 
 #page-container {
+	a{
+		color:#333;
+		text-decoration:none;
+		&:hover{
+			color:#000;
+		}
+	}
 	#page-header{
 		background:#000;
 		color:#fff;
@@ -24,6 +31,22 @@
 			}
 		}
 	}
+	#nav-hook{
+		display: block;
+		background:#000;
+		text-align:center;
+		padding:10px 0;
+		color:#f4f4f4;
+		text-transform: uppercase;
+		font-weight:bold;
+		margin:10px 0;
+		border-radius: 6px; 
+		-moz-border-radius: 6px;  
+		-webkit-border-radius: 6px;
+		&:hover{
+			background:#333;
+		}
+	}
 	.row {
 		div{ 
 			strong {
@@ -43,3 +66,27 @@
 }
 
 @import "import/breakpoint";
+
+[role="navigation"],
+[role="main"]{
+	transition: .2s all ease;			
+	width: 90%;
+	padding: 5%;
+}
+
+.js nav#main-nav[role="navigation"] {	
+	margin-left: -100%;
+	float: left;
+}
+.js [role="main"] {
+	margin-left: 0;
+	float: left;
+}
+
+.active-nav [role="navigation"] {	
+	margin-left: 0;	
+	width: 80%;
+}
+.active-nav [role="main"]{
+	margin-right: -100%;
+}

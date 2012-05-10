@@ -586,6 +586,13 @@ a:link {
     page-break-after: avoid;
   }
 }
+#page-container a {
+  color: #333;
+  text-decoration: none;
+}
+#page-container a:hover {
+  color: #000;
+}
 #page-container #page-header {
   background: #000;
   color: #fff;
@@ -606,6 +613,22 @@ a:link {
   width: 25%;
   text-align: center;
   padding: 10px 0;
+}
+#page-container #nav-hook {
+  display: block;
+  background: #000;
+  text-align: center;
+  padding: 10px 0;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+#page-container #nav-hook:hover {
+  background: #333;
 }
 #page-container .row div strong {
   display: block;
@@ -722,4 +745,25 @@ a:link {
   .row > * .first {
     margin-left: 0;
   }
+}
+[role="navigation"],
+[role="main"] {
+  transition: .2s all ease;
+  width: 90%;
+  padding: 5%;
+}
+.js nav#main-nav[role="navigation"] {
+  margin-left: -100%;
+  float: left;
+}
+.js [role="main"] {
+  margin-left: 0;
+  float: left;
+}
+.active-nav [role="navigation"] {
+  margin-left: 0;
+  width: 80%;
+}
+.active-nav [role="main"] {
+  margin-right: -100%;
 }
