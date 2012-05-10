@@ -1,20 +1,26 @@
 @import "import/human";
 @import "import/normalize";
+@import "import/core";
 
 #page-container {
 	#page-header{
 		background:#000;
-		#main-nav{
-			background: #fff;
-			ul{
-				list-style-type:none;
-				li{
-					display: inline-block;
-					vertical-align: top;
-					zoom: 1;
-					width:20%;
-					text-align:center;
-				}
+		color:#fff;
+		padding:15px 0;
+		text-align:center;
+	}
+	#main-nav{
+		background: #f3f3f3;
+		color:#333;
+		border-bottom:5px solid #000;
+		ul{
+			list-style-type:none;
+			overflow:hidden;
+			li{
+				float:left;
+				width:25%;
+				text-align:center;
+				padding:10px 0;
 			}
 		}
 	}

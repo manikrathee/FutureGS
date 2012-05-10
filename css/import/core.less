@@ -2,6 +2,12 @@
 body{font-size:14px;color:#777;line-height:1.5;-webkit-text-size-adjust: none;text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: none;}
 
+/*  Tansitions */
+-webkit-transition:all 0.25s ease-in-out;
+-moz-transition:all 0.25s ease-in-out;
+-o-transition:all 0.25s ease-in-out;
+transition:all 0.25s ease-in-out;
+
 /* Responsive Images */
 img, object, embed {max-width: 100%;}
 img {height: auto;}
@@ -22,11 +28,14 @@ a:link { -webkit-tap-highlight-color: #333; }
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 .invisible { visibility: hidden; }
+
+
+/* If you have to use clearfix, it is included. Instead, you should be using overflow:hidden; to clear floats. */
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-
+/*  Base print stylesheet */
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
   -ms-filter: none !important; } 
