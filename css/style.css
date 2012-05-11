@@ -650,30 +650,6 @@ a:link {
 #page-container #nav-hook:hover {
   background: #333;
 }
-#page-container .testing-container .test {
-  background: #000;
-  height: 300px;
-  width: 300px;
-  -webkit-border-top-right-radius: 20px;
-  -webkit-border-bottom-right-radius: 10px;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 8px;
-  -moz-border-radius-topright: 20px;
-  -moz-border-radius-bottomright: 10px;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 8px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 8px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -moz-opacity: 0.5;
-  -khtml-opacity: 0.5;
-  -webkit-opacity: 0.5;
-  opacity: 0.5;
-}
 #page-container .row div strong {
   display: block;
   text-align: center;
@@ -727,9 +703,6 @@ a:link {
 #page-header #main-nav {
   width: 100%;
 }
-.testing-container {
-  width: 100%;
-}
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -740,9 +713,6 @@ a:link {
     width: 100%;
   }
   #page-header #main-nav {
-    width: 100%;
-  }
-  .testing-container {
     width: 100%;
   }
   .row .uno {
