@@ -1,7 +1,4 @@
--webkit-transition: all 0.25s ease-in-out;
--moz-transition: all 0.25s ease-in-out;
--o-transition: all 0.25s ease-in-out;
-transition: all 0.25s ease-in-out;/*
+/*
 *   Built on the fluid Master Framework
 *   Github: https://github.com/manikrathee/Master-Framework
 *
@@ -451,6 +448,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/*  Base styles applied to all pages */
 /*  Base Text Styles */
 body {
   font-size: 14px;
@@ -460,7 +458,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: none;
 }
-/*  Tansitions */
 /* Responsive Images */
 img,
 object,
@@ -484,17 +481,6 @@ img {
 a:link {
   -webkit-tap-highlight-color: #333;
 }
-/*  Mixins */
-.ir {
-  display: block;
-  text-indent: -999em;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  text-align: left;
-  direction: ltr;
-}
-/* New Image Replacement Technique - http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
-/*.ir{text-indent: 100%;white-space: nowrap;overflow: hidden;}*/
 .hidden {
   display: none;
   visibility: hidden;
@@ -586,7 +572,25 @@ a:link {
     page-break-after: avoid;
   }
 }
-#page-container a {
+/*  CSS3 Transition */
+/*  Border Radius */
+/*  Image Replacement */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+/* 	New Image Replacement Technique - http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+/*
+.ir{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+*/#page-container a {
   color: #333;
   text-decoration: none;
 }
@@ -646,6 +650,30 @@ a:link {
 #page-container #nav-hook:hover {
   background: #333;
 }
+#page-container .testing-container .test {
+  background: #000;
+  height: 300px;
+  width: 300px;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 8px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
 #page-container .row div strong {
   display: block;
   text-align: center;
@@ -699,6 +727,9 @@ a:link {
 #page-header #main-nav {
   width: 100%;
 }
+.testing-container {
+  width: 100%;
+}
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -709,6 +740,9 @@ a:link {
     width: 100%;
   }
   #page-header #main-nav {
+    width: 100%;
+  }
+  .testing-container {
     width: 100%;
   }
   .row .uno {
