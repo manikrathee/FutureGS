@@ -1,7 +1,4 @@
--webkit-transition: all 0.25s ease-in-out;
--moz-transition: all 0.25s ease-in-out;
--o-transition: all 0.25s ease-in-out;
-transition: all 0.25s ease-in-out;/*
+/*
 *   Built on the fluid Master Framework
 *   Github: https://github.com/manikrathee/Master-Framework
 *
@@ -451,6 +448,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/*  Base styles applied to all pages */
 /*  Base Text Styles */
 body {
   font-size: 14px;
@@ -460,7 +458,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: none;
 }
-/*  Tansitions */
 /* Responsive Images */
 img,
 object,
@@ -484,17 +481,6 @@ img {
 a:link {
   -webkit-tap-highlight-color: #333;
 }
-/*  Mixins */
-.ir {
-  display: block;
-  text-indent: -999em;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  text-align: left;
-  direction: ltr;
-}
-/* New Image Replacement Technique - http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
-/*.ir{text-indent: 100%;white-space: nowrap;overflow: hidden;}*/
 .hidden {
   display: none;
   visibility: hidden;
@@ -586,6 +572,31 @@ a:link {
     page-break-after: avoid;
   }
 }
+/*  CSS3 Transition */
+/*  Border Radius */
+/*  Image Replacement */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+/* 	New Image Replacement Technique - http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+/*
+.ir{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+*/#page-container a {
+  color: #333;
+  text-decoration: none;
+}
+#page-container a:hover {
+  color: #000;
+}
 #page-container #page-header {
   background: #000;
   color: #fff;
@@ -607,6 +618,38 @@ a:link {
   text-align: center;
   padding: 10px 0;
 }
+#page-container #main-nav #nav-hook-return {
+  display: block;
+  background: #000;
+  text-align: center;
+  padding: 10px 0;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+#page-container #main-nav #nav-hook-return:hover {
+  background: #333;
+}
+#page-container #nav-hook {
+  display: block;
+  background: #000;
+  text-align: center;
+  padding: 10px 0;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+#page-container #nav-hook:hover {
+  background: #333;
+}
 #page-container .row div strong {
   display: block;
   text-align: center;
@@ -619,6 +662,12 @@ a:link {
   border-radius: 5px;
   margin-top: 10px;
 }
+@media screen and (min-width: 500px) {
+  #page-container #nav-hook,
+  #page-container #main-nav #nav-hook-return {
+    display: none;
+  }
+}
 .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -626,6 +675,7 @@ a:link {
 .row {
   overflow: hidden;
   width: 100%;
+  margin: 0 auto;
 }
 .row > * {
   margin-left: 0;
@@ -645,6 +695,19 @@ a:link {
 .eleven,
 .twelve {
   overflow: hidden;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven {
+  margin-left: 3.8%;
 }
 /* Grid: Master Container, default = 1140px */
 /* Grid: Master Container, default = 1140px */
@@ -668,58 +731,90 @@ a:link {
   }
   .row .uno {
     float: left;
-    width: 6.7%;
+    width: 4.85%;
     float: left;
   }
   .row .dos {
     float: left;
-    width: 15%;
+    width: 13.45%;
     float: left;
   }
   .row .tres {
     float: left;
-    width: 23.333333333333%;
+    width: 22.05%;
     float: left;
   }
   .row .cuatro {
     float: left;
-    width: 31.666666666667%;
+    width: 30.75%;
   }
   .row .siete {
     float: left;
-    width: 48.333333333333%;
+    width: 48%;
     float: left;
   }
   .row .ocho {
     float: left;
-    width: 65%;
+    width: 65.4%;
     float: left;
   }
   .row .fee {
     float: left;
-    width: 15%;
+    width: 13.45%;
     float: left;
   }
   .row .fie {
     float: left;
-    width: 23.333333333333%;
+    width: 22.05%;
     float: left;
   }
   .row .foe {
     float: left;
-    width: 48.333333333333%;
+    width: 48%;
     float: left;
   }
   .row .fum {
     float: left;
-    width: 6.7%;
+    width: 4.85%;
     float: left;
   }
   .row > * {
-    margin-left: 1.6666667%;
+    margin-left: 3.8%;
   }
   .row > *:first-child,
   .row > * .first {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  html,
+  body {
+    min-height: 100%;
+  }
+  nav#main-nav,
+  div#main {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+  }
+  .js #main-nav {
+    margin-left: -200%;
+    float: left;
+  }
+  .js #main {
+    margin-left: 0;
+    float: left;
+  }
+  .active-nav#main-nav {
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .active-nav#main {
+    margin-right: -300%;
+    padding-left: 100%;
   }
 }
