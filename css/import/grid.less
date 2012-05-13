@@ -18,6 +18,10 @@
 	}
 }
 
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{
+	overflow:hidden;
+}
+
 .one(@breakpoint) {
 } .one(@breakpoint) when (@breakpoint > 767px) {
 	float: left;
@@ -107,8 +111,4 @@
 .twelve(@breakpoint) {
 	@max-width:100%;
 	width:@max-width;
-}
-
-.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{
-	overflow:hidden;
 }
