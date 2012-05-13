@@ -1,5 +1,5 @@
 /*
-*   Built on the fluid Master Framework
+*   Fluid Master Framework
 *   Github: https://github.com/manikrathee/Master-Framework
 *
 *	Developed by Manik Rathee & Chris Wolff
@@ -461,7 +461,8 @@ body {
 /* Responsive Images */
 img,
 object,
-embed {
+embed,
+iframe {
   max-width: 100%;
 }
 img {
@@ -675,7 +676,6 @@ a:link {
 .row {
   overflow: hidden;
   width: 100%;
-  margin: 0 auto;
 }
 .row > * {
   margin-left: 0;
@@ -695,19 +695,6 @@ a:link {
 .eleven,
 .twelve {
   overflow: hidden;
-}
-.one,
-.two,
-.three,
-.four,
-.five,
-.six,
-.seven,
-.eight,
-.nine,
-.ten,
-.eleven {
-  margin-left: 3.8%;
 }
 /* Grid: Master Container, default = 1140px */
 /* Grid: Master Container, default = 1140px */
@@ -731,55 +718,55 @@ a:link {
   }
   .row .uno {
     float: left;
-    width: 4.85%;
+    width: 6.7%;
     float: left;
   }
   .row .dos {
     float: left;
-    width: 13.45%;
+    width: 15%;
     float: left;
   }
   .row .tres {
     float: left;
-    width: 22.05%;
+    width: 23.333333333333%;
     float: left;
   }
   .row .cuatro {
     float: left;
-    width: 30.75%;
+    width: 31.666666666667%;
   }
   .row .siete {
     float: left;
-    width: 48%;
+    width: 48.333333333333%;
     float: left;
   }
   .row .ocho {
     float: left;
-    width: 65.4%;
+    width: 65%;
     float: left;
   }
   .row .fee {
     float: left;
-    width: 13.45%;
+    width: 15%;
     float: left;
   }
   .row .fie {
     float: left;
-    width: 22.05%;
+    width: 23.333333333333%;
     float: left;
   }
   .row .foe {
     float: left;
-    width: 48%;
+    width: 48.333333333333%;
     float: left;
   }
   .row .fum {
     float: left;
-    width: 4.85%;
+    width: 6.7%;
     float: left;
   }
   .row > * {
-    margin-left: 3.8%;
+    margin-left: 1.6666667%;
   }
   .row > *:first-child,
   .row > * .first {
