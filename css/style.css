@@ -461,7 +461,8 @@ body {
 /* Responsive Images */
 img,
 object,
-embed {
+embed,
+iframe {
   max-width: 100%;
 }
 img {
