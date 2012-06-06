@@ -8,6 +8,11 @@
   Twitter: @manikrathee
   Location: East Coast, USA
 
+  Wolff [Chris Wolff]
+  Site: www.chriswolffdevelopment.com
+  Twitter:@seawolff
+  Location: Chicago, IL
+
 
 /* SITE */
   Standards: HTML5, CSS3

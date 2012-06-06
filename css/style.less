@@ -1,42 +1,25 @@
 @import "import/human";
-/*@import "import/normalize";*/
-@import "import/grid";
-/*@import "import/core";*/
+@import "import/normalize";
+@import "import/core";
+@import "import/mixins";
 
-
-/* Grid: Master Container, default = 1140px */
-.row{
-	.row(1140px);
-}
-
-
-#page_container{
-	header{
-		.twelve;
-		.last;
-	}
-	#page-nav{
-		.three;
-	}
-	#main{
-		.nine;
-		.last;
-	}
-	footer{
-		.twelve;
-		.last;
+#page-container {
+	.row {
+		div{ 
+			strong {
+				display: block;
+				text-align: center;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				background: #444;
+				color: white;
+				font-weight: bold;
+				text-shadow: 0 -1px 1px black;
+				border-radius: 5px;
+				margin-top: 10px;
+			}
+		}
 	}
 }
 
-
-@media screen and (min-width: 768px) {	
-
-}
-
-@media (min-width: 960px) {
-	
-}
-
-.oldie{
-
-}
+@import "import/grid-compile";
