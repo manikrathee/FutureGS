@@ -1,4 +1,31 @@
-HTML, CSS Framework
-Built by Manik Rathee
-With Help From Chris Wolff
-Custom configuration of 1140gs, Semantic gs, twitter bootstrap, h5bp and more
+//Title
+Responsive, Fluid, Fully Semantic Framework
+
+Responsive and fluid css grid for futureproof layouts with completely semantic markup.
+
+Inspired by Twitter Bootstrap, 1140gs, Semantic.gs, H5BP & Daniel Ryan's CSS Smart Grid.
+
+Built by:
+Manik Rathee / www.manikrathee.com / @manikrathee
+Chris Wolff / www.chriswolffdevelopment.com / @seawolff
+
+Using //Title
+Style.less 
+- compiles to style.css
+- This should be used as your standard stylesheet
+
+Layout.less
+- contains structural styles
+- Instead of having <nav id="main-navigation" class="three columns">, you can have <nav id="main-navigation">
+- Then, define nav#main-naviation in layout:
+		nav#main-navigation{
+			.three (@breakpoint);
+		}
+- .three is the column number, @breakpoint will define the mobile, table and desktop sizes for that column width.
+
+Normalize.less
+- Replaced the standard H5BP CSS reset
+
+Core.less
+- Contains main styles repeated across projects
+- Has classes like .ir, ::selection, base body typography and image max widths
