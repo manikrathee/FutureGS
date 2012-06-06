@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-HTML, CSS Framework
-Built by Manik Rathee
-Custom configuration of 1140gs, Semantic gs, twitter bootstrap, h5bp and more
-
-
-
-=======
-//Title
-Responsive, Fluid, Fully Semantic Framework
+FUTURE GS
+Responsive, Fluid, Fully Semantic Framework & Grid System
 
 Responsive and fluid css grid for futureproof layouts with completely semantic markup.
 
@@ -37,4 +29,3 @@ Normalize.less
 Core.less
 - Contains main styles repeated across projects
 - Has classes like .ir, ::selection, base body typography and image max widths
->>>>>>> 31dee3f5382ffdbbb5b465d84e26d0ba9fb85282
