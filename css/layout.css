@@ -1,0 +1,17 @@
+.container{padding-left:20px;padding-right:20px;}
+.row{overflow:hidden;zoom:1;width:100%;}.row>*{margin-left:0;margin-right:0;width:100%;}
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve{overflow:hidden;}
+.layout .nav{overflow:hidden;}
+.layout .about{overflow:hidden;}
+.layout .content{overflow:hidden;}
+.style .nav{background:red;}
+.style .about{background:green;}
+.style .content{background:blue;}
+.desktop body{background:yellow;}
+.nav{overflow:hidden;}
+.about{overflow:hidden;}
+.content{overflow:hidden;}
+.nav{background:red;}
+.about{background:green;}
+.content{background:blue;}
+@media screen and (min-width:768px){.container{max-width:1100px;} .one{float:left;width:6.7% !important;} .two{float:left;width:15% !important;} .three{float:left;width:23.333333333333% !important;} .four{float:left;width:31.666666666667% !important;} .five{float:left;width:40% !important;} .six{float:left;width:48.333333333333% !important;} .seven{float:left;width:56.666666666667% !important;} .eight{float:left;width:65% !important;} .nine{float:left;width:73.333333333333%;} .ten{float:left;width:81.666666666667%;} .eleven{float:left;width:90%;} .twelve{width:100%;} .row{overflow:hidden;width:100%;}.row>*{margin-left:0;margin-right:0;width:inherit;} .nav{float:left;width:73.333333333333%;} .about{float:left;width:23.333333333333% !important;} .content{width:100%;} .nav{background:red;} .about{background:green;} .content{background:blue;} body{background:yellow;}}

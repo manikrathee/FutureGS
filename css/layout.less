@@ -1,42 +1,11 @@
-/* Grid: Master Container, default = 1140px */
-@max-width: 960px;
+@import "style";
 
+.layout;
+.style;
 
-#page-header{
-	.twelve (@breakpoint);
-	#main-nav{
-		.twelve (@breakpoint);
-	}
-}
-.row{
-	.uno {
-		.one (@breakpoint);
-	}
-	.dos {
-		.two (@breakpoint);
-	}
-	.tres {
-		.three (@breakpoint);
-	}
-	.cuatro {
-		.four (@breakpoint);
-	}
-	.siete {
-		.six (@breakpoint);
-	}
-	.ocho {
-		.eight (@breakpoint);
-	}
-	.fee {
-		.two (@breakpoint);
-	}
-	.fie {
-		.three (@breakpoint);
-	}
-	.foe {
-		.six (@breakpoint);
-	}
-	.fum {
-		.one (@breakpoint);
-	}
+@media screen and (min-width: 768px){
+	@import "widthcols";
+	.layout;
+	.style;
+	.desktop;
 }

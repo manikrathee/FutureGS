@@ -1,6 +1,0 @@
-.container{padding-left:20px;padding-right:20px;}
-.row{overflow:hidden;width:100%;}.row>*{margin-left:0;margin-right:0;width:100%;}
-.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve{overflow:hidden;}
-#page-header{width:100%;}#page-header #main-nav{width:100%;}
-.container{max-width:960px;margin:0 auto;}
-@media (min-width:768px){#page-header{width:100%;}#page-header #main-nav{width:100%;} .row .uno{float:left;width:6.7%;float:left;} .row .dos{float:left;width:15%;float:left;} .row .tres{float:left;width:23.333333333333%;float:left;} .row .cuatro{float:left;width:31.666666666667%;} .row .siete{float:left;width:48.333333333333%;float:left;} .row .ocho{float:left;width:65%;float:left;} .row .fee{float:left;width:15%;float:left;} .row .fie{float:left;width:23.333333333333%;float:left;} .row .foe{float:left;width:48.333333333333%;float:left;} .row .fum{float:left;width:6.7%;float:left;} .row>*{margin-left:1.6666667%;}.row>*:first-child,.row>* .first{margin-left:0;}}

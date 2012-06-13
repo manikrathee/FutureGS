@@ -1,25 +1,47 @@
-@import "import/human";
+/*@import "import/human";
 @import "import/normalize";
-@import "import/core";
-@import "import/mixins";
+@import "import/core";*/
+/*@import "import/mixins";*/
+@import "cols";
 
-#page-container {
-	.row {
-		div{ 
-			strong {
-				display: block;
-				text-align: center;
-				padding-top: 5px;
-				padding-bottom: 5px;
-				background: #444;
-				color: white;
-				font-weight: bold;
-				text-shadow: 0 -1px 1px black;
-				border-radius: 5px;
-				margin-top: 10px;
-			}
-		}
+
+.layout{
+	.nav{
+		.nine;
+	}
+	.about{
+		.three;
+	}
+	.content{
+		.twelve;
 	}
 }
 
-@import "import/grid-compile";
+
+
+.style{
+	.nav{
+		background: red;
+	}
+	.about{
+		background:green;
+	}
+	.content{
+		background: blue;
+	}
+}
+
+
+/*.layouttwo{
+	.nav{
+		.six;
+	}
+}*/
+
+
+
+.desktop{
+	body{
+		background: yellow;
+	}
+}
