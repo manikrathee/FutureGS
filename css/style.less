@@ -1,25 +1,43 @@
-@import "import/human";
+/*! FutureGS Custom Framework - Built by Manik Rathee | @manikrathee | www.manikrathee.com */
+
+/* Grid: Master Container*/
+@max-width: 960px;
+
 @import "import/normalize";
 @import "import/core";
 @import "import/mixins";
 
-#page-container {
-	.row {
-		div{ 
-			strong {
-				display: block;
-				text-align: center;
-				padding-top: 5px;
-				padding-bottom: 5px;
-				background: #444;
-				color: white;
-				font-weight: bold;
-				text-shadow: 0 -1px 1px black;
-				border-radius: 5px;
-				margin-top: 10px;
-			}
-		}
-	}
+
+@import "styles/base";
+
+
+@media screen and (max-width: 400px) {
+	@import "styles/mobile";
 }
 
-@import "import/grid-compile";
+
+@media screen and (min-width: 401px) and (max-width: 767px) {
+	@import "styles/tablet";
+}
+
+
+@media screen and (min-width: 768px) {
+	@import "styles/small-desktop";
+}
+
+
+@media screen and (min-width: 960px) {
+	@import "styles/desktop";
+}
+
+
+@media screen and (min-width: 1200px) {
+	@import "styles/large-desktop";
+}
+
+
+.oldie{
+	@import "styles/small-desktop";
+	@import "styles/desktop";
+	@import "styles/oldie";
+}
