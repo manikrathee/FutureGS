@@ -1,0 +1,83 @@
+/* Base Styles */
+
+/* Highlight */
+::-moz-selection{ background: #333; color:#fff; text-shadow: none; }
+::selection { background:#333; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #333; }
+
+/* 
+Retina Mixin Autocompiler
+.logo {
+  .at2x('/images/my_image.png', 200px, 100px);
+}
+ */
+ 
+ 
+ 
+.container{
+	padding-top: 20px;
+}
+
+
+#logo{
+	.eight(@breakpoint);
+	h1{
+		text-transform: uppercase;
+		font-weight: normal;
+		margin-bottom: 5px;
+		span{
+			font-weight: bold;
+		}
+	}
+	h2{
+		font-size: 11px;
+		font-weight: normal;
+	}
+}
+
+
+#demo{ 
+	.uno {
+		.one (@breakpoint);
+	}
+	.dos {
+		.two (@breakpoint);
+	}
+	.tres {
+		.three (@breakpoint);
+	}
+	.cuatro {
+		.four (@breakpoint);
+	}
+	.siete {
+		.six (@breakpoint);
+	}
+	.ocho {
+		.eight (@breakpoint);
+	}
+	.fee {
+		.two (@breakpoint);
+	}
+	.fie {
+		.three (@breakpoint);
+	}
+	.foe {
+		.six (@breakpoint);
+	}
+	.fum {
+		.one (@breakpoint);
+	}
+
+	strong {
+		display: block;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background: #444;
+		color: white;
+		font-weight: bold;
+		text-shadow: 0 -1px 1px black;
+		border-radius: 5px;
+		margin-top: 10px;
+	}
+}
